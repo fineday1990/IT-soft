@@ -1,0 +1,230 @@
+@import "normalizez.scss"
+@import "resets.scss"
+
+html
+    font-family: sans-serif
+.container
+    max-width: 1600px
+    margin: 0 auto
+.header-first
+    min-height: 72px
+    padding-top: 13px
+    &__left-content
+        font-family: 'Myriad Pro',sans-serif
+        font-weight: 400
+        font-size: 16px
+        margin-right: 14px
+        &:last-child
+            margin-right: 0
+    &__right-content
+        margin-right: 40px
+        font-size: 16px
+        &:last-child
+            margin-right: 0
+.nav-menu-first
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding: 0 6px 0 6px
+.nav-menu
+    &__left
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+    &__right
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        span
+            font-family: 'Myriad Pro',sans-serif
+            font-weight: 600
+            font-size: 16px
+            margin-right: 10px
+.btn-nav
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    padding: 15px 40px
+    gap: 10px
+    width: 193px
+    height: 46px
+    background: #FFFFFF
+    border: 1px solid #003896
+    border-radius: 2px
+    font-family: 'Myriad Pro',sans-serif
+    font-weight: 400
+    font-size: 14px
+
+.header-second
+    display: flex
+    align-items: center
+    min-height: 75px
+    background: #003896
+    color: white
+    &__logo
+        margin-right: 260px
+        .text-bottom
+            font-size: 14px
+            font-weight: 300
+    &__title-main
+        display: flex
+        flex-direction: row
+        margin-right: 190px
+    &__text-right
+        display: flex
+        flex-direction: row
+    &__right-text
+        margin-right: 6px
+.nav-menu__list
+    display: flex
+    flex-direction: row
+.nav-menu
+    &__list-item
+        margin-right: 56px
+        font-size: 16px
+        font-weight: 600
+        &:last-child
+            margin-right: 0px
+.nav-menu-second
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 0 6px 0 6px
+.phone
+    font-weight: 600
+    font-size: 18px
+.section-first
+    position: relative
+    min-height: 420px
+    background: linear-gradient(270deg, #19202B 30.13%, rgba(25, 32, 43, 0.8) 59.84%)
+    margin-bottom: 70px
+    overflow: hidden
+    &__left-box
+        position: absolute
+        z-index: 5
+    &__right-first
+        position: absolute
+        z-index: 1
+        width: 463px
+        height: 284px
+        left: 955px
+        top: 146px
+    &__right-second
+        position: absolute
+        width: 463px
+        height: 284px
+        left: 1074px
+        top: 21px
+    &__main-title
+        font-weight: 500
+        font-size: 40px
+        color: white
+        margin-bottom: 30px
+    &__left-box
+        padding-top: 99px
+    &__checbox
+        display: flex
+        flex-direction: row
+        margin-bottom: 60px
+        label
+            color: white
+        input
+            height: 10px
+            width: 10px
+            margin-right: 4px
+    &__checbox-box
+        margin-right: 30px
+        &:last-child
+            margin-right: 0px
+    &__btn
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding: 16px 60px
+        gap: 10px
+        width: 219px
+        height: 52px
+        background: #003896
+        border-radius: 2px
+        border: none
+        font-family: 'Myriad Pro'
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 100%
+        color: #FFFFFF
+.main-fon
+    position: absolute
+    z-index: -1
+
+.section-second
+    position: relative
+    min-height: 576px
+    &__left-box
+        padding-top: 20px
+        padding-left: 10px
+        max-width: 765px
+        margin-right: 100px
+    &__title
+        margin-bottom: 40px
+        font-family: Magistral, sans-serif
+        font-weight: 500
+        font-size: 40px
+        line-height: 48px
+    &__text
+        margin-bottom: 104px
+        font-family: Myriad Pro, sans-serif
+        font-weight: 400
+        font-size: 18px
+        line-height: 32.4px
+    &__right-foto
+        width: 100%
+.second-section
+    display: flex
+    flex-direction: row
+
+.section-three
+    min-height: 200px
+    display: flex
+    flex-direction: row
+    justify-content: center
+    background: url(../img/image.png)
+    //background: rgba(255, 255, 255, 0.9)
+    &__box
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        margin-right: 145px
+        &:last-child
+            margin-right: 0px
+    &__title
+        font-family: Myriad Pro, sans-serif
+        font-weight: 600
+        font-size: 24px
+        line-height: 28.8px
+        color: #003896
+    &__img
+        margin-right: 20px
+@media (max-width: 1640px)
+    .container
+        width: 1100px
+@media (max-width: 1199px)
+    .container
+        width: 960px
+
+@media (max-width: 991px)
+    .container
+        width: 720px
+
+@media (max-width: 767px)
+    .container
+        width: 540px
+
+@media (max-width: 575px)
+    .container
